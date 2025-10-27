@@ -106,6 +106,11 @@ Implement a calculator class following the TDD methodology:
 - JUnit (Testing framework)
 - AssertJ (Fluent assertions library)
 
+## Personal Notes
+
+Level2 AssertionsModel Class contains all the methods used to solve the list of exercises in a single class, it lacks an AssertionsView counterclass since it is not needed for the resolution
+of the exercises in the different mains at level 2.
+
 ## Getting Started
 
 1. Clone this repository
