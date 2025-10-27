@@ -2,7 +2,7 @@ package level2;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.fail;
-import level2.model.Assertions;
+import level2.model.AssertionsModel;
 
 import org.junit.jupiter.api.Test;
 
@@ -10,11 +10,11 @@ import org.junit.jupiter.api.BeforeEach;
 
 public class AssertionsTest {
 
-    private Assertions testedAssertions;
+    private AssertionsModel testedAssertions;
 
     @BeforeEach
     void setUp(){
-        testedAssertions = new Assertions();
+        testedAssertions = new AssertionsModel();
     }
 
     @Test

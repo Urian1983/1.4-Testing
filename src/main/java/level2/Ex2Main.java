@@ -1,10 +1,10 @@
 package level2;
 
-import level2.model.Assertions;
+import level2.model.AssertionsModel;
 
 public class Ex2Main {
     public static void main(String[] args) {
-        Assertions a = new Assertions();
+        AssertionsModel a = new AssertionsModel();
         System.out.println("'Hello' == 'Hello' ? " + a.compareStrings("Hello", "Hello"));
         System.out.println("'Hello' == 'Bye' ? " + a.compareStrings("Hello", "Bye"));
     }

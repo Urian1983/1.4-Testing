@@ -1,10 +1,10 @@
 package level2;
 
-import level2.model.Assertions;
+import level2.model.AssertionsModel;
 
 public class Ex4Main {
     public static void main(String[] args) {
-        Assertions a = new Assertions();
+        AssertionsModel a = new AssertionsModel();
         a.fillObjectList('A', 123, "Hello");
         System.out.println("List: " + a.getObjectList());
         a.addToObjectList('A');
