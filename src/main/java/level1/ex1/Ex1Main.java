@@ -10,6 +10,5 @@ public class Ex1Main {
     public static void main(String[] args) {
         LibraryView libraryView = new LibraryView();
         libraryView.run();
-
     }
 }

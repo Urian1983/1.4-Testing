@@ -18,7 +18,7 @@ public class LibraryView {
 
             try {
                 int pos = Input.readInteger("Please, type the position");
-                boolean success = libraryManager.addBook(title, author, pos);
+                boolean success = libraryManager.addBookByPos(title, author, pos);
                 if (success) {
                     System.out.println("Book added succesfully");
                 }
@@ -28,7 +28,7 @@ public class LibraryView {
             }
 
         } else {
-            libraryManager.addBook(title, author);
+            libraryManager.addBookByPos(title, author);
             System.out.println("Book added succesfully");
         }
 

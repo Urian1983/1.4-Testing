@@ -17,6 +17,10 @@ public class Book {
         return author;
     }
 
+    //Posar un hashcode i un equals
+
+    //moure LibraryManager i LibraryView de carpeta
+
     @Override
     public String toString() {
         return title + "," + author;

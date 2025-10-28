@@ -5,11 +5,13 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
+//Crear algoritme per ordenar alfabeticament els llibres.
+
 public class LibraryManager {
 
    private Set<Book> bookList = new LinkedHashSet<>();
 
-   public void addBook (String title, String author){
+   public void addBook(String title, String author){
         Book newBook = new Book(title,author);
         bookList.add(newBook);
     }
@@ -41,7 +43,7 @@ public class LibraryManager {
 
     }
 
-    public boolean addBook(String title, String author, int pos) {
+    public boolean addBookByPos(String title, String author, int pos) {
 
         List<Book> books = new ArrayList<>(bookList);
 
