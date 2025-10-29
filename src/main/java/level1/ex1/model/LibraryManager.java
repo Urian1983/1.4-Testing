@@ -1,9 +1,6 @@
-package level1.model;
+package level1.ex1.model;
 
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 //Crear algoritme per ordenar alfabeticament els llibres.
 
@@ -61,5 +58,14 @@ public class LibraryManager {
 
         return bookList.removeIf(book -> book.getTitle().equals(title));
         }
+
+    public void sortBooksByTitle() {
+        List<Book> books = new ArrayList<>(bookList);
+        books.sort(Comparator.comparing(Book::getTitle));
+        bookList.clear();
+        bookList.addAll(books);
     }
+    }
+
+
 

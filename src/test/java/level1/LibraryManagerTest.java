@@ -1,6 +1,5 @@
 package level1;
-import level1.model.LibraryManager;
-import level1.model.Book;
+import level1.ex1.model.LibraryManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -71,3 +70,5 @@ public class LibraryManagerTest {
 
     }
 }
+
+//Afegir tests per comprobar el ordre alfabetic es mante.

@@ -1,9 +1,6 @@
-package level1;
+package level1.ex1;
 
-import level1.model.LibraryView;
-import support.Input;
-
-import java.util.Scanner;
+import level1.ex1.view.LibraryView;
 
 public class Ex1Main {
 

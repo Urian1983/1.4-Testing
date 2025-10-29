@@ -1,10 +1,10 @@
 package level1.ex2.model;
 
-public class dni {
+public class Dni {
 
     String numDNI;
 
-    public dni(String numDNI){
+    public Dni(String numDNI){
         this.numDNI = numDNI;
     }
 

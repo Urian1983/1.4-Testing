@@ -1,5 +1,6 @@
-package level1.model;
+package level1.ex1.view;
 
+import level1.ex1.model.LibraryManager;
 import support.Input;
 
 public class LibraryView {
@@ -28,10 +29,10 @@ public class LibraryView {
             }
 
         } else {
-            libraryManager.addBookByPos(title, author);
+            libraryManager.addBook(title, author);
             System.out.println("Book added succesfully");
         }
-
+        libraryManager.sortBooksByTitle();
     }
 
     public void removeBook() {
@@ -43,6 +44,7 @@ public class LibraryView {
         } else {
             System.out.println("Book couldn't be deleted");
         }
+        libraryManager.sortBooksByTitle();
     }
 
     public void printAllBooks() {
@@ -92,4 +94,6 @@ public class LibraryView {
                 "4. Get book's title by position\n" +
                 "0. Exit program\n";
     }
+
+
 }

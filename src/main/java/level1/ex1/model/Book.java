@@ -1,4 +1,6 @@
-package level1.model;
+package level1.ex1.model;
+
+import java.util.Objects;
 
 public class Book {
     private String title;
@@ -17,9 +19,17 @@ public class Book {
         return author;
     }
 
-    //Posar un hashcode i un equals
+    @Override
+    public boolean equals(Object object) {
+        if (object == null || getClass() != object.getClass()) return false;
+        Book book = (Book) object;
+        return Objects.equals(title, book.title) && Objects.equals(author, book.author);
+    }
 
-    //moure LibraryManager i LibraryView de carpeta
+    @Override
+    public int hashCode() {
+        return Objects.hash(title, author);
+    }
 
     @Override
     public String toString() {
